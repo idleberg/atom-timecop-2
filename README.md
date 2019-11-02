@@ -61,3 +61,7 @@ Install dependencies:
 ```bash
 cd timecop-2 && npm install
 ```
+
+## License
+
+This work is licensed under the [MIT License](LICENSE.md)
