@@ -1,5 +1,10 @@
-# Timecop package
-[![OS X Build Status](https://travis-ci.org/atom/timecop.svg?branch=master)](https://travis-ci.org/atom/timecop) [![Windows Build Status](https://ci.appveyor.com/api/projects/status/37fhichmvx90sd97/branch/master?svg=true)](https://ci.appveyor.com/project/Atom/timecop/branch/master) [![Dependency Status](https://david-dm.org/atom/timecop.svg)](https://david-dm.org/atom/timecop)
+# timecop-2
+
+[![apm](https://flat.badgen.net/apm/license/timecop-2)](https://atom.io/packages/timecop-2)
+[![apm](https://flat.badgen.net/apm/v/timecop-2)](https://atom.io/packages/timecop-2)
+[![apm](https://flat.badgen.net/apm/dl/timecop-2)](https://atom.io/packages/timecop-2)
+![AppVeyor: build](http://flat.badgen.net/appveyor/ci/idleberg/atom-timecop-2)
+[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/atom-timecop-2)](https://circleci.com/gh/idleberg/atom-timecop-2)
 
 Displays information about where time is spent while Atom loads.
 
@@ -10,6 +15,10 @@ Displays information about where time is spent while Atom loads.
   * Theme loading time
   * Theme activation time
 
-![](https://cloud.githubusercontent.com/assets/378023/20422582/9e5907f8-adae-11e6-8267-faa3514de896.png)
+This package is a fork of the [timecop](https://github.com/atom/timecop). Here are the main differences:
 
-Inspired by [Timecop](http://www.imdb.com/title/tt0111438/) the movie. :watch: :rotating_light:
+  * customizable threshold times
+  * customizable onClick actions
+  * minor UI changes
+
+Inspired by [Timecop 2: The Berlin Decision](https://www.imdb.com/title/tt0318763/) the movie.
