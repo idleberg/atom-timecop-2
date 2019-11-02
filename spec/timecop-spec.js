@@ -4,7 +4,7 @@ const CSON = require(path.join(atom.getLoadSettings().resourcePath, 'node_module
 
 const {it, fit, ffit, beforeEach, afterEach} = require('./async-spec-helpers') // eslint-disable-line no-unused-vars
 
-describe('Timecop', () => {
+describe('Timecop 2', () => {
   beforeEach(async () => {
     spyOn(CompileCache, 'getCacheStats').andReturn({
       '.js': {hits: 3, misses: 4},
@@ -16,11 +16,11 @@ describe('Timecop', () => {
 
     atom.themes.lessCache.cache.stats.misses = 12
 
-    await atom.packages.activatePackage('timecop')
+    await atom.packages.activatePackage('timecop-2')
   })
 
-  describe('the Timecop view', () => {
-    let timecopView = null
+  describe('the Timecop 2 view', () => {
+    let timecop2View = null
 
     beforeEach(async () => {
       const packages = [
@@ -51,13 +51,13 @@ describe('Timecop', () => {
       spyOn(atom.packages, 'hasLoadedInitialPackages').andReturn(true)
       spyOn(atom.packages, 'hasActivatedInitialPackages').andReturn(true)
 
-      timecopView = await atom.workspace.open('atom://timecop')
+      timecop2View = await atom.workspace.open('atom://timecop-2')
     })
 
     afterEach(() => jasmine.unspy(atom.packages, 'getLoadedPackages'))
 
     it('shows the packages that loaded slowly', () => {
-      const loadingPanel = timecopView.refs.packageLoadingPanel
+      const loadingPanel = timecop2View.refs.packageLoadingPanel
       expect(loadingPanel.element.textContent).toMatch(/1 package took longer than 5ms to load/)
       expect(loadingPanel.element.textContent).toMatch(/slow-loading-package/)
 
@@ -66,7 +66,7 @@ describe('Timecop', () => {
     })
 
     it('shows the packages that activated slowly', () => {
-      const activationPanel = timecopView.refs.packageActivationPanel
+      const activationPanel = timecop2View.refs.packageActivationPanel
       expect(activationPanel.element.textContent).toMatch(/2 packages took longer than 5ms to activate/)
       expect(activationPanel.element.textContent).toMatch(/slow-activating-package-1/)
       expect(activationPanel.element.textContent).toMatch(/slow-activating-package-2/)
@@ -76,7 +76,7 @@ describe('Timecop', () => {
     })
 
     it('shows how many files were transpiled from each language', () => {
-      const cachePanel = timecopView.refs.cacheLoadingPanel
+      const cachePanel = timecop2View.refs.cacheLoadingPanel
 
       expect(cachePanel.element.textContent).toMatch(/CoffeeScript files compiled\s*8/)
       expect(cachePanel.element.textContent).toMatch(/Babel files compiled\s*4/)
