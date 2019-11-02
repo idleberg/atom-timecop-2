@@ -4,7 +4,8 @@
 [![apm](https://flat.badgen.net/apm/v/timecop-2)](https://atom.io/packages/timecop-2)
 [![apm](https://flat.badgen.net/apm/dl/timecop-2)](https://atom.io/packages/timecop-2)
 ![AppVeyor: build](http://flat.badgen.net/appveyor/ci/idleberg/atom-timecop-2)
-[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/atom-timecop-2)](https://circleci.com/gh/idleberg/atom-timecop-2)
+![Travis: build](http://flat.badgen.net/travis/idleberg/atom-timecop-2)
+![David: dependencies](http://flat.badgen.net/david/dep/idleberg/atom-timecop-2)
 
 Displays information about where time is spent while Atom loads.
 
@@ -21,4 +22,4 @@ This package is a fork of the [timecop](https://github.com/atom/timecop). Here a
   * customizable onClick actions
   * minor UI changes
 
-Inspired by [Timecop 2: The Berlin Decision](https://www.imdb.com/title/tt0318763/) the movie.
+Inspired by [Timecop 2: The Berlin Decision](https://www.imdb.com/title/tt0318763/) the movie (not really!)
