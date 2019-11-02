@@ -3,9 +3,9 @@
 [![apm](https://flat.badgen.net/apm/license/timecop-2)](https://atom.io/packages/timecop-2)
 [![apm](https://flat.badgen.net/apm/v/timecop-2)](https://atom.io/packages/timecop-2)
 [![apm](https://flat.badgen.net/apm/dl/timecop-2)](https://atom.io/packages/timecop-2)
-![AppVeyor: build](http://flat.badgen.net/appveyor/ci/idleberg/atom-timecop-2)
-![Travis: build](http://flat.badgen.net/travis/idleberg/atom-timecop-2)
-![David: dependencies](http://flat.badgen.net/david/dep/idleberg/atom-timecop-2)
+[![AppVeyor: build](http://flat.badgen.net/appveyor/ci/idleberg/atom-timecop-2)](https://ci.appveyor.com/project/idleberg/atom-timecop-2)
+[![Travis: build](http://flat.badgen.net/travis/idleberg/atom-timecop-2)](https://travis-ci.org/idleberg/atom-timecop-2)
+[![David: dependencies](http://flat.badgen.net/david/dep/idleberg/atom-timecop-2)](https://david-dm.org/idleberg/atom-timecop-2)
 
 ## Description
 
