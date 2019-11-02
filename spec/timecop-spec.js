@@ -2,14 +2,14 @@ const path = require('path')
 const CompileCache = require(path.join(atom.getLoadSettings().resourcePath, 'src', 'compile-cache'))
 const CSON = require(path.join(atom.getLoadSettings().resourcePath, 'node_modules', 'season'))
 
-const {it, fit, ffit, beforeEach, afterEach} = require('./async-spec-helpers') // eslint-disable-line no-unused-vars
+const { it, fit, ffit, beforeEach, afterEach } = require('./async-spec-helpers') // eslint-disable-line no-unused-vars
 
 describe('Timecop 2', () => {
   beforeEach(async () => {
     spyOn(CompileCache, 'getCacheStats').andReturn({
-      '.js': {hits: 3, misses: 4},
-      '.ts': {hits: 5, misses: 6},
-      '.coffee': {hits: 7, misses: 8}
+      '.js': { hits: 3, misses: 4 },
+      '.ts': { hits: 5, misses: 6 },
+      '.coffee': { hits: 7, misses: 8 }
     })
 
     spyOn(CSON, 'getCacheMisses').andReturn(10)
@@ -88,11 +88,12 @@ describe('Timecop 2', () => {
 })
 
 class FakePackage {
-  constructor ({name, activateTime, loadTime}) {
+  constructor ({ name, activateTime, loadTime }) {
     this.name = name
     this.activateTime = activateTime
     this.loadTime = loadTime
   }
+
   getType () { return 'package' }
   isTheme () { return false }
 }
