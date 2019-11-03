@@ -17,6 +17,7 @@
     "underscore-plus": "^1.0.0"
   },
   "devDependencies": {
+    "husky": "^3.0.9",
     "standard": "^14.3.1"
   },
   "standard": {
@@ -29,5 +30,13 @@
     "globals": [
       "atom"
     ]
+  },
+  "scripts": {
+    "test": "standard lib/**/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
   }
 }
