@@ -8,6 +8,9 @@
   "engines": {
     "atom": "*"
   },
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
   "deserializers": {
     "Timecop2View": "createTimecopView"
   },
