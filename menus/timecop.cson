@@ -1,10 +1,10 @@
 'menu': [
   'label': 'Packages'
   'submenu': [
-    'label': 'Timecop'
+    'label': 'Timecop 2'
     'submenu': [
       'label': 'Show'
-      'command': 'timecop:view'
+      'command': 'timecop-2:view'
     ]
   ]
 ]
