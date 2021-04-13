@@ -24,7 +24,7 @@ This package is a fork of the [timecop](https://github.com/atom/timecop). Here a
   * customizable onClick actions
   * minor UI changes
 
-Inspired by [Timecop 2: The Berlin Decision](https://www.imdb.com/title/tt0318763/) the movie (not really!)
+Inspired by [Timecop 2: The Berlin Decision](https://www.imdb.com/title/tt0318763/) the movie (actually, no!)
 
 ## Installation
 
